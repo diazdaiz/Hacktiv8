@@ -1,0 +1,33 @@
+1. Newton Second Law
+READ AND SAVE "mass"
+READ AND SAVE "acceleration"
+COMPUTE "mass" multiply by "acceleration"
+SAVE previous computation result as "force"
+DISPLAY "force"
+
+
+
+2. Tahun Kabisat
+READ AND SAVE "tahun"
+IF ("tahun" modulo by 4 equal to 0 and "tahun" modulo by 100 not equal to 0) or ("tahun" modulo by 400 equal to 0)
+	DISPLAY "tahun kabisat"
+ELSE
+	DISPLAY "bukan tahun kabisat"
+
+
+
+3. Laundry Day
+WHILE "pakaian" less then 20 starting from 0
+		pakaian is add by 1
+TURN ON "mesin cuci"
+
+
+
+4. Periksa Kuku
+FOR "periksa_siswa" is less then or equal to 40 starting from 0
+	periksa_siswa is add by 1
+	IF kuku=panjang
+		DO hukum siswa
+	ELSE IF kuku=pendek
+		DO puji siswa
+
