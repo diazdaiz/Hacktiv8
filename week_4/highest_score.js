@@ -10,7 +10,6 @@ function highestScore (students) {
         }
         for(j=0;j<Object.keys(output).length;j++){
             if((Object.keys(output)[j]==students[i].class)&&(output.score<students[i].score)){
-                console.log("hmm");
                 output[students[i].class]={
                     "name":students[i].name,
                     "score":students[i].score
