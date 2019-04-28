@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="ro_matriks.js"></script>
+        <script src="ro_operasi.js"></script>
+        <script src="ro_ro.js"></script>
+        <script>var matriks,i;
+            matriks=[];
+            for(i=0;i<500;i++){
+                matriks.push(new Matriks("null",3,3,[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],0,[0,0,0,0,0],[0,0,0,0,0],[0.0],-1,0,-1));
+            }
+
+            //test apakah fungsi berjalan atau tidak
+            matriks[0].komponen[1][1]=1;
+            matriks[0].komponen[1][2]=2;
+            matriks[0].komponen[1][3]=3;
+            matriks[0].komponen[2][1]=4;
+            matriks[0].komponen[2][2]=55;
+            matriks[0].komponen[2][3]=6;
+            matriks[0].komponen[3][1]=7;
+            matriks[0].komponen[3][2]=8;
+            matriks[0].komponen[3][3]=9;
+            inverse(matriks,0,1)
+            console.log(matriks[1].komponen);
+
+            matriks[2].komponen[1][1]=1;
+            matriks[2].ro.bo=2;
+            matriks[2].ro.op[1]=1;
+            matriks[2].ro.dm[1]=0;
+            matriks[2].ro.op[2]=10;
+            matriks[2].ro.dm[2]=-1;
+            matriks[2].ro.hro=3;
+            tdroperasi(matriks,2);
+            
+            console.log(matriks[3].komponen);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
